@@ -1,0 +1,97 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.smartgovernance.Home">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/s1">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Mission and Vission"
+        android:id="@+id/s"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/s"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:text="To provide a clean, hygenic and aesthetically pleasing environment for the citizens through achieving the best civic standards in the country, preserve the historical character of the city and make it an attractive destination for tourists. "/>
+
+
+</RelativeLayout>
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+        android:layout_below="@+id/s1">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:id="@+id/ma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/pager">
+
+                <TextView
+                    android:id="@+id/marquee1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news"
+                    android:singleLine="true"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="#F2F2F2"
+                    android:scrollHorizontally="true"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"/>
+            </LinearLayout>
+
+            <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/gridView1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/ma"
+                android:columnWidth="150dp"
+                android:layout_margin="20dp"
+                android:horizontalSpacing="15dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth">
+
+            </GridView>
+
+                 </RelativeLayout>
+
+</ScrollView>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <group android:checkableBehavior="single"  >
+
+            <item
+
+                android:id="@+id/login"
+                android:icon="@drawable/login"
+                android:title="Login"></item>
+
+            <item
+
+                android:id="@+id/home_id"
+                android:icon="@drawable/home"
+                android:title="Home"
+                android:visible="true"></item>
+
+            <item
+
+                android:id="@+id/dept"
+                android:title="Departments"
+                android:icon="@drawable/museum"
+                ></item>
+
+
+            <item
+
+                android:title="Logout"
+                android:id="@+id/logout"
+                android:icon="@drawable/shutdown"
+                >
+            </item>
+
+        </group>
+
+
+
+
+    </menu>

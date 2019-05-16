@@ -1,0 +1,190 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.smartgovernance.complainForm"
+    android:id="@+id/main_container2"
+
+    tools:subtitleTextAppearance="@android:drawable/button_onoff_indicator_off">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:id="@+id/main_container"
+            android:weightSum="1">
+
+            <include
+                layout="@layout/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="80dp"
+                    android:backgroundTint="#ADD8E6"
+                    android:ems="10"
+                    android:hint="Name of Person"
+                    android:inputType="textPersonName"
+                    android:lines="1" />
+
+
+                <EditText
+                    android:id="@+id/pno"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#ADD8E6"
+                    android:ems="10"
+                    android:hint="Phone no"
+                    android:inputType="phone"
+                    android:lines="1" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp" >
+
+        <EditText
+            android:id="@+id/area"
+            android:layout_width="322dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:backgroundTint="#ADD8E6"
+            android:ems="10"
+            android:hint="Area"
+            android:inputType="textEmailAddress"
+            android:lines="1" />
+
+        <Button
+            android:id="@+id/location"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@android:drawable/ic_menu_mylocation"
+            android:clickable="true"
+            android:paddingBottom="0dp" />
+    </LinearLayout>
+
+
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#ADD8E6"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="textPersonName"
+            android:lines="1" />
+
+
+
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#ADD8E6"
+                android:paddingTop="5dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:text="Category">
+
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></Spinner>
+
+
+            <EditText
+                android:id="@+id/complain"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#ADD8E6"
+                android:ems="10"
+                android:hint="Complain Description"
+                android:inputType="textPersonName"
+                android:lines="10" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp" >
+
+
+        <Button
+            android:id="@+id/btnUpload"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_marginLeft="10dp"
+            android:text="  Upload image  "
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <ImageView
+            android:id="@+id/ShowImageView"
+            android:layout_width="400dp"
+            android:layout_height="70dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+            <Button
+                android:id="@+id/sub"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/holo_blue_dark"
+                android:clickable="true"
+                android:text="Submit" />
+
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+

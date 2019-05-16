@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.android.smartgovernance.signup"
+
+    tools:subtitleTextAppearance="@android:drawable/button_onoff_indicator_off">
+
+
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_alignParentTop="true"
+    android:id="@+id/login_layout"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/main_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/signUp"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#ADD8E6"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ADD8E6"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/pno"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ADD8E6"
+        android:ems="10"
+        android:hint="Phone no"
+        android:inputType="phone"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/add"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ADD8E6"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ADD8E6"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/cpass"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#ADD8E6"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPassword"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/su"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Sign Up" />
+
+
+
+
+</LinearLayout>
+</RelativeLayout>

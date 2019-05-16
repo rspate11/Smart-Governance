@@ -1,0 +1,212 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:subtitleTextAppearance="@android:drawable/button_onoff_indicator_off"
+    tools:context="com.example.android.smartgovernance.departments"
+    android:id="@+id/main_container2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/t"/>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/t"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <Button
+                android:id="@+id/ex1"
+                android:layout_marginTop="40dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#a8c2c3"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:paddingRight="10dp"
+                android:text="Water Supply"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ex1"
+                android:background="#f1fbfb"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/watersupply"/>
+
+
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            <Button
+                android:id="@+id/ex2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/expandableLayout1"
+                android:background="#a8c2c3"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:paddingRight="10dp"
+                android:text="Street Light"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ex2"
+                android:background="#f1fbfb"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/streetlight"
+                    android:text="Android library for creating an expandable and collapsible to full screen view inside a viewgroup composition. Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+            <Button
+                android:id="@+id/ex3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/expandableLayout2"
+                android:background="#a8c2c3"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:paddingRight="10dp"
+                android:text="Storm Water Drainage"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ex3"
+                android:background="#f1fbfb"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drainage"
+                    android:text="" />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            <Button
+                android:id="@+id/ex4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/expandableLayout3"
+                android:background="#a8c2c3"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:paddingRight="10dp"
+                android:text="Stray Animal"
+                android:textColor="#fff" />
+
+            <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                android:id="@+id/expandableLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ex4"
+                android:background="#f1fbfb"
+                android:padding="16dp"
+                app:ael_duration="400"
+                app:ael_expanded="false"
+                app:ael_orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/animal"
+                    android:text="Implements the expand and collapse by sliding logic for a top or a bottom view in a two children view  or layout or any widgets composition.
+             Implements the expand and collapse by sliding logic for a top or a bottom view in a two children view  or layout or any widgets composition." />
+            </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:layout_below="@+id/expandableLayout4"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:text="Address : Vadodara Municipal Corporation, Khanderao Market, Vadodara-390209 "/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/contact"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact us: "
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9998216886"
+                    android:clickable="true"
+                    android:id="@+id/phone"
+                    android:textColor="?android:attr/colorPrimaryDark"
+                    tools:ignore="NewApi"
+                    android:autoLink="phone"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  /Email:"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="?android:attr/colorPrimaryDark"
+                    tools:ignore="NewApi"
+                    android:id="@+id/email"
+                    android:text="rits.p32@gmail.com"
+                    android:autoLink="email"
+                    android:clickable="true"/>
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
